@@ -1,21 +1,66 @@
 .subtitle
-	text-align: center
 	+font-ptsans-narrow(400)
 	font-size: 48px
 	color: #fff
 	text-transform: uppercase
 
-	&-weight
+	&--weight
 		+font-ptsans-narrow(700)
 	
-	&-color
+	&--red
 		color: #fc481a
 
 .analysis
+	background: url('../img/bg/analysis-bg.png')
+	+cover
+	background-position: 0% 163%
+	padding-top: 45px
+	text-align: center
 
 	&__desc
-		text-align: center
+		padding-bottom: 27px
 		+font-ptsans(400)
 		font-size: 22px
 		color: #ffffff
+
+	&__question
+		width: 66%
+		display: inline-block
+		padding: 31px 60px 50px
+		background: #ffffff
+		border-radius: 10px
+		+font-ptsans(700)
+		font-size: 24px
+		text-transform: uppercase
+
+		&-count
+			display: inline-block
+			width: 60px
+			line-height: 60px
+			border-radius: 30px
+			background: #e6e6e6
+			font-size: 30px
+			vertical-align: middle
+
+		&-text
+			padding-left: 15px
+
+		&-btns
+			display: flex
+			justify-content: space-between
+			padding-top: 39px
+
+		&-btn
+			width: 48%
+			padding: 28px 0 25px
+			+font-ptsans(700)
+			font-size: 24px
+			color: #fff
+			text-transform: uppercase
+			border-radius: 10px
+			background: radial-gradient(circle at 50% -270%, #FC5B39 83%,#fc481a 0%)
+			
+			
+
+
 		

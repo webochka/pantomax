@@ -1,0 +1,51 @@
+.article
+	margin-top: 67px
+	padding: 22px 0 34px 42px
+	border-radius: 10px
+
+	&--about
+		background: #fff url('../img/bg/article1-bg.png') no-repeat 100% 0%
+	
+	&--recommend
+		background: #fff url('../img/bg/article2-bg.png') no-repeat 100% 0%
+		display: flex
+		justify-content: space-between
+
+	&__text-inner
+		width: 60%
+
+	&__title
+		padding-bottom: 21px
+		color: #000
+		font-weight: 700
+		line-height: 52px
+
+	&__text
+		+font-ptsans(400)
+		font-size: 17px
+		line-height: 26px
+
+		&--width
+			+font-ptsans(700)
+			text-transform: uppercase
+
+		&--padding
+			padding-bottom: 10px
+
+	&__photo
+		width: 38%
+
+	&__byline
+		display: flex
+		align-items: center
+
+		&-text
+			+font-ptsans(700)
+			font-style: italic
+			padding-right: 64px
+
+.subtitle--spacing
+	word-spacing: -10px
+
+
+
