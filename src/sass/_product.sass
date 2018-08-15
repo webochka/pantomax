@@ -1,0 +1,219 @@
+.product
+	&__content
+		display: flex
+		justify-content: space-between
+
+	&__about
+		width: 70.5%
+		color: #ffffff
+
+	&__order
+		width: 29.5%
+
+.title
+	padding-bottom: 9px
+	background: linear-gradient(to right, #f0e394 0%, #b49b52 100%)
+	-webkit-background-clip: text
+	color: transparent
+	font-size: 60px
+	+font-roboto-cond(700)
+	text-transform: uppercase
+
+.slogan
+	width: 55%
+	+font-roboto(500)
+	font-size: 22px
+
+.features
+	padding: 11px 0 5px
+
+	&__item
+		position: relative
+		+font_ptsans(400)
+		font-size: 16px
+		line-height: 20px
+		padding-bottom: 10px
+
+		&:before
+			content: url('../img/icons/features-list.png')
+			display: inline-block
+			padding: 5px 3px
+			border: 1px solid #b67a52
+			border-radius: 24px
+			background: #d23d16
+			line-height: 0
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 100%
+			left: 0px
+			margin-top: -2px
+			width: 40%
+			height: 1px
+			background: radial-gradient(circle rgba(#fff, 0.3) , transparent)
+		
+		&:last-child
+			padding-top: 4px
+			line-height: 23px
+
+			&:before
+				vertical-align: top
+
+			&:after
+				display: none
+
+	&__text
+		display: inline-block
+		padding-left: 5px
+
+//introduce
+
+.img
+	width: 100%
+
+.introduce
+	display: flex
+	align-items: center
+
+	&__photo
+		&--left
+			width: 54%
+
+		&--right
+			width: 41%
+			padding-top: 58px
+
+		&-caption
+			+font-ptsans-narrow(400)
+			font-size: 19px
+			text-align: center
+
+//meta
+
+.meta
+	padding-bottom: 32px
+
+	&__counter
+		display: inline-block
+		padding: 8px 12px 6px
+		background: #f6f6f6 
+		border-radius: 4px
+
+		+font-ptsans-narrow(700)
+		font-size: 50px
+		color: #000
+		line-height: 38px
+
+		&--color
+			opacity: 0.7
+			color: rgba(#000, 0.7)
+
+	&__info
+		display: inline-block
+		width: 38%
+		margin-left: 21px
+		+font-ptsans-narrow(400)
+		font-size: 19px
+		line-height: 19px
+		color: #fff
+		
+//form
+
+.form
+	+font-ptsans-narrow(400)
+	background: #ffffff
+	border-radius: 10px
+
+	&__head
+		display: flex
+		clip-path: ellipse(92% 65% at 50% 23%)
+		background: radial-gradient(circle farthest-side at 20px 30px, #972e09 20%, #401208)
+		border-top-left-radius: 8px
+		border-top-right-radius: 8px
+
+		&-title
+			font-size: 18px
+
+		&-price
+			font-size: 48px
+
+		&-text
+			font-size: 24px
+
+
+		&-left
+			padding: 14px 0 34px 22px
+			width: 53%
+			color: #845f55
+			background: rgba(#903513, 0.3)
+			clip-path: ellipse(90% 100% at 10% 46%)
+
+			.form__head-price
+				text-decoration: line-through
+
+		&-right
+			color: #fff
+			padding: 13px 0 34px 15px
+
+			.form__head-price,
+			.form__head-text
+				+font-ptsans-narrow(700)
+
+	&__main
+		padding: 0 17px 21px
+	
+	&__input
+		width: 100%
+		padding: 20px 0 20px 15px
+		margin-bottom: 15px
+		background: #f6f6f6
+		border: 1px solid #e1e1e1
+		border-radius: 5px
+
+		font-size: 14px
+		
+		&::placeholder
+			+font-osans(400)
+			color: #929292
+
+	&__btn
+		width: 100%
+		position: relative
+		margin: 8px 0 21px
+		padding: 14px 0 19px 35px
+		+font-ptsans-narrow(700)
+		color: #fff
+		font-size: 22px
+		background-image: linear-gradient(to top, #d73f17 0%, #fa4a1b 100%)
+		box-shadow: 3px 4px 25px rgba(250, 74, 27, 0.35)
+		border-radius: 5px
+
+
+		&:before
+			content: url('../img/icons/form-arrow.png')
+			position: absolute
+			top: 0%
+			left: 0%
+			padding: 20px 20px 12px
+			border-top-left-radius: 5px
+			border-bottom-left-radius: 5px
+			background: #b13412
+			
+	&__meta
+		font-size: 15px
+		text-align: center
+
+		&:before
+			content: url('../img/icons/form-icon.png')
+			display: inline-block
+			vertical-align: middle
+			padding-right: 10px
+			
+
+
+
+
+
+

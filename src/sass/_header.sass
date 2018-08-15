@@ -1,0 +1,47 @@
+.wrap
+	background: #000
+	
+.container
+	margin: 0 auto
+	max-width: 980px
+
+.top-bg
+	background: url('../img/bg/header-bg.png')
+	+cover
+
+.header
+	display: flex
+	align-items: center
+	padding: 24px 0 18px
+	color: #ffffff
+
+	&__logo-inner
+		width: 35%
+		&:before
+			+header-icon('../img/icons/logo-icon.png')
+			vertical-align: top
+			padding-right: 14px
+
+	&__info
+		+font-ptsans(400)
+		font-size: 18px
+
+		&-inner
+			width: 23%
+			
+		&--size
+			+font-ptsans(700)
+			font-size: 24px
+
+	&__pseudo-icon1
+		&:before
+			+header-icon('../img/icons/header-icon1.png')
+			padding-right: 8px
+
+	&__pseudo-icon2
+		&:before
+			+header-icon('../img/icons/header-icon2.png')
+			padding-right: 11px
+
+
+		
