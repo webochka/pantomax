@@ -1,18 +1,50 @@
 .article
-	margin-top: 67px
 	padding: 22px 0 34px 42px
 	border-radius: 10px
+
+	+r(608)
+		padding: 10px 10px 0
 
 	&--about
 		background: #fff url('../img/bg/article1-bg.png') no-repeat 100% 0%
 	
+		+r(980)
+			background-size: cover
+			background-color: black
+			background-attachment: fixed
+			color: #fff
+
+			.article__title
+				color: #fff
+
+			.article__text-inner
+				padding: 150px 0
+
+		+r(400)
+			background: black
+			
+			.article__text-inner
+				padding: 0
+
 	&--recommend
 		background: #fff url('../img/bg/article2-bg.png') no-repeat 100% 0%
 		display: flex
 		justify-content: space-between
+		padding-bottom: 0
+		font-size: 16px
+
+		+r(980)
+			align-items: flex-end
+			background-size: cover
+
+		+r(750)
+			flex-wrap: wrap
 
 	&__text-inner
 		width: 60%
+
+		+r(750)
+			width: 100%
 
 	&__title
 		padding-bottom: 21px
@@ -31,18 +63,35 @@
 
 		&--padding
 			padding-bottom: 10px
+			line-height: 24px
 
 	&__photo
-		width: 38%
+		width: 39%
+
+		+r(608)
+			width: 70%
+
+		+r(400)
+			width: 100%
+			
 
 	&__byline
 		display: flex
 		align-items: center
 
+		+r(400)
+			flex-wrap: wrap
+			justify-content: center
+			padding: 10px 0
+
 		&-text
 			+font-ptsans(700)
 			font-style: italic
-			padding-right: 64px
+			padding-right: 48px
+
+			+r(608)
+				padding-right: 20px
+
 
 .subtitle--spacing
 	word-spacing: -10px

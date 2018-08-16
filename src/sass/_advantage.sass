@@ -1,0 +1,51 @@
+.advantage
+	background: url('../img/bg/advantage-bg.png') no-repeat 50% 0%
+	background-size: contain
+	padding: 43px 0 60px
+	text-align: center
+
+	+r(1320)
+		background-size: cover
+
+	&__content
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+		flex-wrap: wrap
+		padding-top: 30px
+
+	
+	&__photo
+		width: 31%
+
+		+r(800)
+			width: 30%
+			padding-top: 20px
+			order: 2
+
+	&__list
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+		width: 67%
+
+		+r(800)
+			width: 100%
+			
+	
+	&__item
+		width: 30.5%
+		margin-bottom: 15px
+		background: #fff
+		border-radius: 10px
+
+		+r(950)
+			min-width: 250px
+
+
+		&-text
+			padding: 17px 3px
+			+font-ptsans(700)
+			color: #0b0b0b
+			font-size: 16px
+			
